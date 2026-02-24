@@ -206,7 +206,7 @@ impl BPETokenizer {
     /// # Example
     ///
     /// ```rust
-    /// # use feste::BPETokenizer;
+    /// # use llm_tutorial::BPETokenizer;
     /// # let mut tokenizer = BPETokenizer::new(256);
     /// let ids = tokenizer.encode("Hello, world!");
     /// println!("Token IDs: {:?}", ids);
@@ -321,7 +321,7 @@ impl BPETokenizer {
     /// # Example
     ///
     /// ```rust
-    /// # use feste::BPETokenizer;
+    /// # use llm_tutorial::BPETokenizer;
     /// # let tokenizer = BPETokenizer::new(256);
     /// # let ids = tokenizer.encode("Hello!");
     /// let text = tokenizer.decode(&ids);
@@ -371,7 +371,7 @@ impl BPETokenizer {
     /// # Example
     ///
     /// ```rust,no_run
-    /// # use feste::BPETokenizer;
+    /// # use llm_tutorial::BPETokenizer;
     /// # let tokenizer = BPETokenizer::new(256);
     /// tokenizer.save("tokenizer.json").expect("Failed to save");
     /// ```
@@ -396,7 +396,7 @@ impl BPETokenizer {
     /// # Example
     ///
     /// ```rust,no_run
-    /// use feste::BPETokenizer;
+    /// use llm_tutorial::BPETokenizer;
     ///
     /// let tokenizer = BPETokenizer::load("tokenizer.json")
     ///     .expect("Failed to load tokenizer");
