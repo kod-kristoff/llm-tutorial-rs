@@ -59,7 +59,7 @@ use rayon::prelude::*;
 /// - Moving one step in dimension 0 (rows) advances 3 positions in data
 /// - Moving one step in dimension 1 (cols) advances 1 position in data
 pub struct Tensor {
-    data: Vec<f32>,
+    pub(crate) data: Vec<f32>,
     shape: Vec<usize>,
     strides: Vec<usize>,
 }
@@ -121,7 +121,7 @@ impl Tensor {
         Self::new(vec![0.0; len], shape)
     }
 
-    pub fn shape(&self) -> &[usize] {
+    pub fn shape(&self) -> &Vec<usize> {
         &self.shape
     }
 
