@@ -61,7 +61,11 @@
 mod model;
 pub mod tensor;
 pub mod tokenizer;
+mod train;
+mod training_logger;
 
 pub use crate::model::{Config, Embedding, GPT2};
 pub use crate::tensor::Tensor;
 pub use crate::tokenizer::{BPETokenizer, TokenizerStats};
+pub use crate::train::TextDataLoader;
+pub use crate::training_logger::{TrainingLogger, compute_dataset_loss, train_val_split};

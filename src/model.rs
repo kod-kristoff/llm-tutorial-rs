@@ -714,6 +714,7 @@ impl Attention {
 /// GPT-2 uses 4×n_embd as the hidden dimension in the feedforward layer.
 /// This provides enough capacity for the network to learn complex transformations
 /// while keeping the residual stream (n_embd) smaller for efficiency.
+#[allow(clippy::upper_case_acronyms)]
 pub struct MLP {
     /// First linear layer: [n_embd, 4*n_embd]
     pub c_fc: Linear,

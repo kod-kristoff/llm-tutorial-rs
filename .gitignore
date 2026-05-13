@@ -1,5 +1,16 @@
-/target
+*
 
-shakespeare.txt
+!.gitignore
 
-/tokenizer_runs/
+!LICENSE
+!README.md
+
+!src/
+!src/**/
+!src/**/*.rs
+
+!Cargo.toml
+!Cargo.lock
+
+!examples/
+!examples/*.rs
